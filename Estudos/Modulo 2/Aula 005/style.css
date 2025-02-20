@@ -1,0 +1,13 @@
+div {
+    background-color: lightgrey;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* Hover é uma pseudo classe */
+div:hover {
+    background-color: lightyellow;
+}

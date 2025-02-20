@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+    <style>
+        #verde {
+            background-color: green;
+        }
+        #azul {
+            background-color: blue;
+        }
+        #vermelho {
+            background-color: red;
+        }
+        #amarelo {
+            background-color: yellow;
+        }
+
+        .container {
+            border: 1px solid black;
+            height: 300px;
+
+            display: grid;
+            gap: 5px;
+            border-radius: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "header header header header"
+            "aside main main main"
+            "aside footer footer footer";
+        }
+
+        .container > * {
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        header {
+            grid-area: header;
+        }
+        main {
+            grid-area: main;
+        }
+        aside {
+            grid-area: aside;
+        }
+        footer {
+            grid-area: footer;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                display: grid;
+                grid-template-areas: 
+                "header header header header"
+                "main main main main"
+                "aside aside aside aside"
+                "footer footer footer footer";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="azul">header</header>
+        <main id="amarelo">main</main>
+        <aside id="verde">aside</aside>
+        <footer id="vermelho">footer</footer>
+    </div>
+</body>
+</html>
