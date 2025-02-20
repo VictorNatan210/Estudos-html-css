@@ -1,2 +1,2 @@
 # Estudos-html-css
- Meus estudos de HTML e CSS - CursoemVideo
+ Meus estudos de HTML e CSS do CursoemVideo
