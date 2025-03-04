@@ -74,6 +74,7 @@ header > p {
     color: white;
     font-family: var(--fonte-padrao);
     font-size: 1.3em;
+    padding-bottom: 50px;
 }
 
 nav {
