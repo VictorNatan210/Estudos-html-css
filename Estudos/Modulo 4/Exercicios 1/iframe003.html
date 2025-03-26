@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            width: 95vw;
+            height: 300px;
+
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quam nobis fuga ea impedit ab molestias. Impedit animi placeat harum voluptatum cumque. Repellat aperiam quae quod fuga nam mollitia nobis?</p>
+
+    <ul>
+        <li><a href="paginas-extras/page001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/page002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/page003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos ipsa nesciunt nostrum illum optio, dolorum sunt voluptas adipisci corporis nisi consequatur iure numquam dolores recusandae tenetur fugiat aperiam eum ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptates temporibus ipsum nihil nisi dolorem iure reprehenderit ex dicta, earum error. Recusandae hic possimus dignissimos iure? Iure ex magnam quod.</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima!</h1><img src='./imagens/cursoemvideo.png'></img>" name="frame">
+        <p>Infelizmente o seu navegador não é compatível com isso!</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellendus necessitatibus dolores earum quibusdam natus voluptates minima, iusto eaque blanditiis commodi corporis soluta placeat esse praesentium assumenda labore unde officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, doloribus. Nam quia voluptate consectetur nostrum ratione aut unde a hic laudantium inventore ipsa doloremque, odio consequatur pariatur eius corporis! Exercitationem!</p>
+</body>
+</html>
