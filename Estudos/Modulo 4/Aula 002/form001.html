@@ -17,12 +17,41 @@
             background-image: linear-gradient(to right, #0000ff, #add8e6, #ee82ee, #800080);
         }
 
+        .navbar ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 3px;
+            padding: 30px;
+
+            background-color: white;
+        }
+
+        .navbar ul li {
+            list-style: none;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            background-color: #ff5b5b;
+            color: white;
+            padding: 10px;
+        }
+
+        .navbar ul li:first-child a {
+            border-radius: 5px 0 0 5px;
+        }
+
+        .navbar ul li:last-child a {
+            border-radius: 0 5px 5px 0;
+        }
+
         .main-container {
             display: flex;
-            height: 100vh;
+            height: 97vh;
             align-items: center;
             justify-content: center;
-            width: 100vw;
+            width: 97vw;
         }
 
         .form-container {
@@ -55,29 +84,35 @@
             border-radius: 5px;
             border: 1px solid black;
             outline: none;
+            transition: all .2s ease;
+        }
+
+        .form-item input[type="text"]:focus, .form-item input[type="password"]:focus {
+            box-shadow: 1px 1px 5px #00000080;
         }
 
         .form-button {
             display: flex;
-            gap: 10px;
+            gap: 3px;
         }
 
         .form-item input[type="submit"], .form-item input[type="reset"] {
             padding: 10px;
             color: white;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
         }
 
         .form-button input[type="submit"] {
             background-color: #4CAF50;
+            border-radius: 5px 0 0 5px;
             width: 100%;
         }
 
         .form-button input[type="reset"] {
             background-color: #af4c4c;
-            width: 50%;
+            border-radius: 0 5px 5px 0;
+            width: 30%;
         }
 
         .form-item input[type="submit"]:hover {
@@ -109,6 +144,15 @@
     </style>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">About</a></li>
+                <li><a href="#" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main class="main-container">
         <section class="form-container">
             <h1>Formulário</h1>
