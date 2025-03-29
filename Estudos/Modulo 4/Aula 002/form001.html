@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <style>
+        @charset "UTF-8";
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
         /* Aplicando algumas configurações globais */
         * {
             font-family: Arial, Helvetica, sans-serif;
@@ -14,17 +17,47 @@
         }
 
         body {
-            background-image: linear-gradient(to right, #0000ff, #add8e6, #ee82ee, #800080);
+            background-color: white;
+        }
+
+        .navbar-circle {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #70ff70;
+        }
+
+        .navbar-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar-title a {
+            font-family: 'Passion One', sans-serif;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+        }
+
+        .navbar-title a:hover {
+            color: #dfdfdf;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 0 8px black;
+
+            background-color: black;
         }
 
         .navbar ul {
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
             gap: 3px;
-            padding: 30px;
-
-            background-color: white;
         }
 
         .navbar ul li {
@@ -33,8 +66,9 @@
 
         .navbar ul li a {
             text-decoration: none;
-            background-color: #ff5b5b;
+            background-color: #70ff70;
             color: white;
+            font-weight: bolder;
             padding: 10px;
         }
 
@@ -58,7 +92,6 @@
             display: flex;
             flex-direction: column;
             gap: 30px;
-            background-color: #ffffff54;
             border: 3px solid #000000a2;
             border-radius: 15px;
             width: 90%;
@@ -112,7 +145,7 @@
         .form-button input[type="reset"] {
             background-color: #af4c4c;
             border-radius: 0 5px 5px 0;
-            width: 30%;
+            width: 50%;
         }
 
         .form-item input[type="submit"]:hover {
@@ -146,10 +179,14 @@
 <body>
     <header>
         <nav class="navbar">
+            <div class="navbar-title">
+                <div class="navbar-circle"></div>
+                <a href="#">VictorNatan</a>
+            </div>
             <ul>
-                <li><a href="#" target="_blank">Home</a></li>
-                <li><a href="#" target="_blank">About</a></li>
-                <li><a href="#" target="_blank">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -164,7 +201,7 @@
                 </div>
 
                 <div>
-                    <label for="isen">Sobrenome:</label>
+                    <label for="isen">Senha:</label>
                     <input type="password" name="senha" id="isen" required placeholder="Sua senha." minlength="8" maxlength="12" autocomplete="current-password">
                 </div>
 
